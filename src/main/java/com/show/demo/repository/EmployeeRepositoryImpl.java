@@ -3,20 +3,18 @@ package com.show.demo.repository;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.show.demo.model.Employee;
 
-import jnr.ffi.types.sa_family_t;
-
 @Transactional
 @Repository
 public class EmployeeRepositoryImpl implements EmployeeRepository{
 
-	@Autowired
+	@PersistenceContext
 	EntityManager entityManager;
 	
 	@SuppressWarnings("unchecked")

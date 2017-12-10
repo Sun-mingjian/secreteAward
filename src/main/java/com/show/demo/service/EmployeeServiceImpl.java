@@ -4,12 +4,12 @@ import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.support.Repositories;
+import org.springframework.stereotype.Service;
 
-import com.arjuna.ats.internal.jdbc.drivers.modifiers.extensions;
 import com.show.demo.model.Employee;
 import com.show.demo.repository.EmployeeRepository;
 
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 	
 	@Autowired

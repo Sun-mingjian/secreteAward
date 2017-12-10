@@ -2,7 +2,6 @@ package com.show.demo.controllers;
 
 import java.util.List;
 
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.show.demo.model.Employee;
-import com.show.demo.repository.EmployeeRepository;
 import com.show.demo.service.EmployeeService;
 
 @RestController
