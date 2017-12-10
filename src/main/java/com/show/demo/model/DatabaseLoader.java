@@ -1,8 +1,10 @@
-package com.show.demo.payroll;
+package com.show.demo.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import com.show.demo.repository.EmployeeRepository;
 
 @Component
 public class DatabaseLoader implements CommandLineRunner {
